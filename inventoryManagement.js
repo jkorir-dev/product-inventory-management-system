@@ -1,8 +1,11 @@
-
-const products = ["Laptop", "Smartphone", "Headphones", "Smartwatch"];
+const products = ["Laptop", "Phone", "Headphones", "Monitor"];
 
 function logFirstProduct() {
     console.log(products[0]);
+}
+
+function addProduct(newProduct) {
+    products.push(newProduct);
 }
 
 function updateProductName(index, newName) {
@@ -11,9 +14,6 @@ function updateProductName(index, newName) {
 
 function removeLastProduct() {
     products.pop();
-}
-function addProduct(newProduct) {
-    products.push(newProduct);
 }
 
 try {
